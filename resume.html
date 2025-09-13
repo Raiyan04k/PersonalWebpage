@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Intesar Raiyan Rahman</title>
+  <link rel="stylesheet" href="style.css"> <!-- Optional: put shared CSS here -->
+  <style>
+    body { margin: 0; font-family: "Fira Code", monospace; background: linear-gradient(135deg,#1a1a1d,#2c2f33); color:#e0e0e0; display:flex; min-height:100vh; }
+    .sidebar { width:220px; background:rgba(0,0,0,0.7); backdrop-filter:blur(6px); display:flex; flex-direction:column; padding:40px 20px; position:fixed; left:0; top:0; bottom:0; box-shadow:2px 0 10px rgba(0,0,0,0.4);}
+    .sidebar h2 { color:#fff; font-size:22px; margin-bottom:40px; text-align:center; }
+    .sidebar a { text-decoration:none; color:#ccc; font-weight:500; margin:10px 0; padding:10px 15px; border-radius:6px; position:relative; transition:all 0.3s ease;}
+    .sidebar a:hover { color:#fff; background:rgba(255,255,255,0.05);}
+    .sidebar a.active { color:#4db6ac; font-weight:bold;}
+    .main { margin-left:240px; flex:1; padding:60px; display:flex; justify-content:center; align-items:center;}
+    .intro { max-width:700px; text-align:center; animation:fadeUp 1s ease;}
+    .intro h1 { font-size:2.5em; margin-bottom:20px; background:linear-gradient(90deg,#4db6ac,#81c784); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+    .resume-box { background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); padding:30px; border-radius:12px; animation:fadeUp 1.5s ease;}
+    .resume-box a { display:inline-block; margin-top:20px; text-decoration:none; padding:12px 20px; border-radius:6px; background:#4db6ac; color:#fff; font-weight:bold; transition:0.3s;}
+    .resume-box a:hover { background:#81c784; transform:translateY(-3px);}
+    @keyframes fadeUp { from{opacity:0;transform:translateY(30px);} to{opacity:1;transform:translateY(0);} }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Tabs</h2>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="education.html">Education</a>
+      <a href="resume.html" class="active">Resume</a>
+      <a href="contact.html" >Contact</a>
+      <a href="experiences.html">Experiences</a>
+  </div>
+
+  <div class="main">
+    <div class="intro">
+      <h1>My Resume</h1>
+      <div class="resume-box">
+        <p>You can view or download my resume below:</p>
+        <a href="Resume.pdf" download>📄 Download Resume</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
